@@ -1,0 +1,188 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e7e7e7;
+}
+
+/* Navigation styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative; /* To position the social menu relative to the nav */
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Pushes the nav links to the right of the logo */
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav .nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto; /* Pushes the hamburger menu to the far right */
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+}
+
+/* Section styles */
+section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.home-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #000000;
+    height: 60vh; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0; /* Adjusted padding for smaller section */
+}
+
+.about-section, .contact-section {
+    background-color: #f4f4f4;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background: #555;
+}
+
+/* Social Menu Styles */
+.social-menu {
+    display: none; /* Initially hide the social menu */
+    position: static;
+    top: 60px; /* Adjust based on your navigation height */
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.social-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-menu li {
+    margin-bottom: 10px;
+}
+
+.social-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Set breakpoint for mobile devices */
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex; /* Show nav links when the hamburger menu is clicked */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on smaller screens */
+    }
+
+    .social-menu {
+        top: 100px; /* Adjusted for proper spacing below nav links */
+        right: 10px;
+    }
+}
+
+/* Show class to display the social menu */
+.social-menu.show {
+    display: block;
+}

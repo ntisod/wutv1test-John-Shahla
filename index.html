@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Shahla's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">JSH Website</h1>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger menu for smaller screens -->
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <!-- Social menu for hamburger menu -->
+        <div class="social-menu">
+            <ul>
+                <li><a href="https://twitch.tv/johnshahla00">Twitch</a></li>
+                <li><a href="https://youtube.com/@johnshahla00">Youtube</a></li>
+                <li><a href="https://instagram.com/jo1sha">Instagram</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Hello, I'm John</h2>
+            <p>Welcome to my personal website.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a 17 years old Gamer, Streamer and Programmer who Started learning about the porgramming world the year 2019 at the age of 12, I started my journey learning Node.js on my phone and trying out different project from github, I got recommended to try and code discord bots as these were easy and straight forward and later on i started learning about websites and game developing.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
