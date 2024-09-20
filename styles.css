@@ -1,4 +1,3 @@
-/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +6,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1;
     background-color: #e7e7e7;
 }
 
-/* Navigation styles */
 nav {
     background: #333;
     color: #fff;
     padding: 1rem 0;
-    position: relative; /* To position the social menu relative to the nav */
+    position: relative; 
 }
 
 nav .container {
@@ -24,7 +22,7 @@ nav .container {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: auto;
+    margin-left: auto;
 }
 
 nav .logo {
@@ -34,12 +32,12 @@ nav .logo {
 nav .nav-links {
     list-style: none;
     display: flex;
-    margin-left: auto; /* Pushes the nav links to the right of the logo */
+    /*margin-left: auto; */
 }
-
+/*
 nav .nav-links li {
     margin-left: 20px;
-}
+}*/
 
 nav .nav-links a {
     color: #fff;
@@ -52,23 +50,21 @@ nav .nav-links a:hover {
     border-radius: 5px;
 }
 
-/* Hamburger Menu Styles */
 .hamburger-menu {
     display: flex;
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
-    margin-left: auto; /* Pushes the hamburger menu to the far right */
+    margin-left: auto;
 }
 
 .hamburger-menu span {
     width: 30px;
     height: 3px;
     background-color: #fff;
-    display: block;
+    display: flex;
 }
 
-/* Section styles */
 section {
     padding: 3rem 0;
     text-align: center;
@@ -82,12 +78,12 @@ section {
 .home-section {
     background: url('background.jpg') no-repeat center center/cover;
     color: #000000;
-    height: 60vh; /* Reduced height */
+    height: 60vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem 0; /* Adjusted padding for smaller section */
+    padding: 2rem 0; 
 }
 
 .about-section, .contact-section {
@@ -121,17 +117,16 @@ section {
     background: #555;
 }
 
-/* Social Menu Styles */
 .social-menu {
-    display: none; /* Initially hide the social menu */
+    display: none; 
     position: static;
-    top: 60px; /* Adjust based on your navigation height */
+    top: 60px; 
     right: 10px;
     background-color: #333;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 1000;
 }
 
 .social-menu ul {
@@ -154,10 +149,9 @@ section {
     text-decoration: underline;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) { /* Set breakpoint for mobile devices */
+@media (max-width: 768px) { 
     .nav-links {
-        display: none; /* Hide nav links on smaller screens */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -169,20 +163,19 @@ section {
     }
 
     .nav-links.show {
-        display: flex; /* Show nav links when the hamburger menu is clicked */
+        display: flex;
     }
 
     .hamburger-menu {
-        display: flex; /* Show hamburger menu on smaller screens */
+        display: flex; 
     }
 
     .social-menu {
-        top: 100px; /* Adjusted for proper spacing below nav links */
+        top: 100px; 
         right: 10px;
     }
 }
 
-/* Show class to display the social menu */
 .social-menu.show {
     display: block;
 }
