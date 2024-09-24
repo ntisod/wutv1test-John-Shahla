@@ -21,23 +21,22 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin-left: auto;
-}
+    width: 95%;
+    }
 
 nav .logo {
     font-size: 1.5rem;
+flex-grow: 1;
 }
 
 nav .nav-links {
     list-style: none;
-    display: flex;
-    /*margin-left: auto; */
+    display: flex; */
 }
-/*
-nav .nav-links li {
-    margin-left: 20px;
-}*/
+
+nav .nav-links a { {
+    color: #fff;*/
+    text-decoration: none;
 
 nav .nav-links a {
     color: #fff;
@@ -62,8 +61,7 @@ nav .nav-links a:hover {
     width: 30px;
     height: 3px;
     background-color: #fff;
-    display: flex;
-}
+    }
 
 section {
     padding: 3rem 0;
@@ -149,21 +147,41 @@ section {
     text-decoration: underline;
 }
 
+        display: none;
 @media (max-width: 768px) { 
+    justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
     .nav-links {
         display: none; 
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 10px;
+z-index: 999;
+        text-align: center;
+        position: : tra;
+        top: f;
+        right:
+
+    .hamburger-conten;
         background-color: #333;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateX(0); /* Slide in for full-screen menu */
+    }
+
+    .nav-links li {
     }
 
     .nav-links.show {
-        display: flex;
+        -links a {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .social-menu {
+        display: block; /* Social links inside the hamburger menu */
+    }
+
+    .social-menu ul {
     }
 
     .hamburger-menu {
@@ -171,11 +189,27 @@ section {
     }
 
     .social-menu {
-        top: 100px; 
-        right: 10px;
+        
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .hamburger-content {
+        display: none; /* Hide hamburger content on desktop */
+    }
+
+    .nav-links {
+        displa0px;
     }
 }
 
-.social-menu.show {
-    display: block;
+        display: block; /* Show social media links outside on desktop */
+        position: static;
+        margin-left: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+    display: 
 }
