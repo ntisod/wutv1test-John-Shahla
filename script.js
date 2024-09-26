@@ -1,10 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const navLinks = document.querySelector(".nav-links");
-  const socialMenu = document.querySelector(".social-menu");
+  const hamburgerContent = document.querySelector(".hamburger-content");
 
-  hamburgerMenu.addEventListener("click", function() {
-      navLinks.classList.toggle("show");
-      socialMenu.classList.toggle("show");
+  hamburgerMenu.addEventListener("click", function () {
+      hamburgerContent.classList.toggle("show");
+  });
+
+  // Dark mode toggle
+  const themeToggle = document.getElementById("themeToggle");
+  themeToggle.addEventListener("change", function () {
+      document.body.setAttribute(
+          "data-theme",
+          themeToggle.checked ? "dark" : "light"
+      );
   });
 });
