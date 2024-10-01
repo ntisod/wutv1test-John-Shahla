@@ -58,6 +58,7 @@ nav .nav-links a:hover {
 }
 
 .hamburger-menu {
+    margin-left: auto;
     display: flex;
     cursor: pointer;
     flex-direction: column;
@@ -289,13 +290,6 @@ input:checked ~ .moon {
     .contact-section form {
         width: 90%;
     }
-}
-
-/* Container for consistent layout */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 /* General Section Styles */
