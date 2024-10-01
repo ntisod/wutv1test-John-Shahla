@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ body {
     --text-color: #fff;
 }
 
+/* Navbar Styles */
 nav {
     background: #333;
     color: #fff;
@@ -239,10 +241,10 @@ input:checked + .slider:before {
 }
 
 .emoji {
-    font-size: 20px; /* Adjust size as needed */
+    font-size: 20px; 
     filter: grayscale(100%);
-    margin-left: 10px; /* Space between the toggle and emojis */
-    transition: filter 0.3s; /* Smooth transition for hover effect */
+    margin-left: 10px; 
+    transition: filter 0.3s; 
 }
 
 /* Initial state: show the sun, hide the moon */
@@ -262,7 +264,6 @@ input:checked ~ .sun {
 input:checked ~ .moon {
     display: inline; /* Show the moon */
 }
-
 
 /* Responsive styling */
 @media (max-width: 768px) {
@@ -288,4 +289,193 @@ input:checked ~ .moon {
     .contact-section form {
         width: 90%;
     }
+}
+
+/* Container for consistent layout */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* General Section Styles */
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p, ol {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    max-width: 150px;
+    border: 3px solid #fff;
+}
+
+.about-section p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Background Section */
+.background-section p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Future Section */
+.future-section p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Games Section */
+.games-section ol {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+}
+
+.games-section li {
+    margin-bottom: 10px;
+}
+
+.games-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.games-section a:hover {
+    text-decoration: underline;
+}
+
+/* Table of Contents */
+.toc-section {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.toc-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.toc-section ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.toc-section li {
+    margin-bottom: 10px;
+}
+
+.toc-section a {
+    color: #245180;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.toc-section a:hover {
+    color: #3498db;
+}
+
+/* School Section */
+.school-section {
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.school-section img {
+    margin-top: 20px;
+}
+
+.school-section address {
+    margin-top: 15px;
+    font-style: normal;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+}
+
+/* Hamburger Content */
+.hamburger-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.hamburger-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hamburger-content a {
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.hamburger-content a:hover {
+    color: #3498db;
+}
+
+/* Light Theme */
+body.light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar.light, .toc-section.light, .about-section.light, .background-section.light,
+.future-section.light, .games-section.light, .school-section.light {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar.dark, .toc-section.dark, .about-section.dark, .background-section.dark,
+.future-section.dark, .games-section.dark, .school-section.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.hamburger-menu span {
+    background-color: #fff; 
+}
+
+/* Styling for the Table of Contents */
+.toc-section {
+    padding: 20px;
+    border-radius: 8px;
 }

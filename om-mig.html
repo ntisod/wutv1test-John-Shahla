@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Shahla's Website</title>
+    <title>About John Shahla</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/main.png">
+    <!-- Page created by John Shahla, 2024 -->
 </head>
 
 <body>
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <h1 class="logo">JSH Website - This is the backup site</h1>
+            <h1 class="logo">JSH Website</h1>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
@@ -34,8 +34,11 @@
                 <label class="theme-switch">
                     <input type="checkbox" id="themeToggle">
                     <span class="slider round"></span>
+                    <span class="emoji sun" aria-hidden="true">🌞</span>
+                    <span class="emoji moon" aria-hidden="true">🌙</span>
                 </label>
             </div>
+            
         </div>
 
         <!-- Social links menu -->
@@ -44,38 +47,78 @@
                 <li><a href="https://twitch.tv/johnshahla00">Twitch</a></li>
                 <li><a href="https://youtube.com/@johnshahla00">YouTube</a></li>
                 <li><a href="https://instagram.com/jo1sha">Instagram</a></li>
-                <li><a href="index.html">Main Website</a></li>
+                <li><a href="index.html">Main Page</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
+    <!-- Table of Contents -->
+    <section id="toc" class="toc-section">
         <div class="container">
-            <h2>Hello, I'm John</h2>
-            <p>Welcome to my personal website.</p>
-            <a href="#about" class="learn-more">Learn More</a>
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#about-me">About Me - John Shahla</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#thoughts-future">Thoughts on the Future</a></li>
+                <li><a href="#favorite-games">My Favorite Games</a></li>
+                <li><a href="#school-info">NTI Gymnasiet</a></li>
+            </ul>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about-me" class="about-section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a 17 years old Gamer, Streamer and Programmer who Started learning about the porgramming world the year 2019 at the age of 12, I started my journey learning Node.js on my phone and trying out different project from github, I got recommended to try and code discord bots as these were easy and straight forward and later on i started learning about websites and game developing.</p>
+            <h2>About Me - John Shahla</h2>
+            <img src="images/main.png" alt="John Shahla" style="max-width: 200px; border-radius: 50%;">
+            <p>Welcome to my about page! I am John Shahla, a 17-year-old gamer, streamer, and programmer. Below, you'll find more about my journey, background, and plans for the future.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!-- Background Section -->
+    <section id="background" class="background-section">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <h2>Background</h2>
+            <p>I began my programming journey in 2019 at the age of 12, starting with Node.js on my phone. Since then, I’ve explored game development, web development, and creating Discord bots. My passion for coding continues to grow every day.</p>
+            <p>I attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a> because of their strong focus on tech and innovation. It’s a great environment to expand my skills in programming and development.</p>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section id="thoughts-future" class="future-section">
+        <div class="container">
+            <h2>Thoughts on the Future</h2>
+            <p>In the future, I aim to continue honing my skills in game development and web programming. I’m particularly interested in building applications that can improve user experience, both in gaming and everyday life. I am excited about what the future holds in the tech world.</p>
+        </div>
+    </section>
+
+    <!-- Favorite Games Section -->
+    <section id="favorite-games" class="games-section">
+        <div class="container">
+            <h2>My Favorite Games</h2>
+            <ol>
+                <li><a href="https://en.wikipedia.org/wiki/Polytrack" target="_blank">Polytrack</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Valorant" target="_blank">Valorant</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cyberpunk_2077" target="_blank">Cyberpunk 2077</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank">Minecraft</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" target="_blank">The Witcher 3</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- School Info Section -->
+    <section id="school-info" class="school-section">
+        <div class="container">
+            <h2>NTI Gymnasiet</h2>
+            <p>I currently attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a>, which has been an amazing school that aligns perfectly with my interests in technology and innovation. Their focus on cutting-edge tech helps me grow as a developer.</p>
+            <div>
+                <img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype.svg" alt="NTI Gymnasiet Logo" style="max-width: 200px;">
+                <address>
+                    NTI Gymnasiet Södertälje<br>
+                    Storgatan 20,<br>
+                    151 72 Södertälje, Sweden<br>
+                </address>
+            </div>
         </div>
     </section>
 
