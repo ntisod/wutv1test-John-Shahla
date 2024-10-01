@@ -128,7 +128,7 @@ nav .nav-links a:hover {
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 50%;
     top: 50%;
     left: 5px;
@@ -232,6 +232,37 @@ input:checked + .slider:before {
 .contact-section button:hover {
     background-color: #555;
 }
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 20px; /* Adjust size as needed */
+    filter: grayscale(100%);
+    margin-left: 10px; /* Space between the toggle and emojis */
+    transition: filter 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Initial state: show the sun, hide the moon */
+.sun {
+    display: inline;
+}
+
+.moon {
+    display: none;
+}
+
+/* When the checkbox is checked (dark mode) */
+input:checked ~ .sun {
+    display: none; /* Hide the sun */
+}
+
+input:checked ~ .moon {
+    display: inline; /* Show the moon */
+}
+
 
 /* Responsive styling */
 @media (max-width: 768px) {
