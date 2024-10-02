@@ -57,6 +57,11 @@ nav .nav-links a:hover {
     border-radius: 5px;
 }
 
+.title-image {
+    max-width: 27px;
+    filter: grayscale(100%);
+}
+
 .hamburger-menu {
     margin-left: auto;
     display: flex;
@@ -176,23 +181,6 @@ input:checked + .slider:before {
 
 .learn-more:hover {
     background-color: #555;
-}
-
-/* About Section Styling */
-.about-section {
-    padding: 100px 0;
-    text-align: center;
-    background-color: var(--background);
-    color: var(--text-color);
-}
-
-.about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 1.2rem;
 }
 
 /* Contact Section Styling */
