@@ -45,17 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     }
-
+/*
     // Get theme from local storage
     const storedTheme = localStorage.getItem('theme') || 'light';
     console.log('Stored theme:', storedTheme); // Log theme
     applyTheme(storedTheme);
     themeToggle.checked = storedTheme === 'dark';
-
+*/
     // On theme change
     themeToggle.addEventListener('change', function () {
         const theme = themeToggle.checked ? 'dark' : 'light';
         applyTheme(theme);
         localStorage.setItem('theme', theme);
     });
+    
 });
