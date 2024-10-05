@@ -21,6 +21,10 @@ body {
     --text-color: #fff;
 }
 
+a[href^="#"] {
+    scroll-behavior: smooth;
+  }
+
 /* Navbar Styles */
 nav {
     background: #333;
@@ -55,6 +59,7 @@ nav .nav-links a {
 nav .nav-links a:hover {
     background: #555;
     border-radius: 5px;
+    scroll-behavior: smooth;
 }
 
 .title-image {
@@ -64,15 +69,17 @@ nav .nav-links a:hover {
 
 .hamburger-menu {
     margin-left: auto;
-    display: flex;
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
+    display: inline-block;
 }
 
 .hamburger-menu span {
-    width: 30px;
+    display: block;
+    width: 25px;
     height: 3px;
+    margin: 5px;
     background-color: #fff;
 }
 
@@ -84,8 +91,10 @@ nav .nav-links a:hover {
     top: 100%;
     right: 0;
     width: 200px;
-    background-color: #333;
     border-radius: 5px;
+    display: none;
+    background-color: #fff;
+    padding: 20px;
 }
 
 .hamburger-content.show {
@@ -391,27 +400,6 @@ p, ol {
     font-style: normal;
 }
 
-/* Hamburger Menu */
-.hamburger-menu {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.hamburger-menu span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: #333;
-}
-
-/* Hamburger Content */
-.hamburger-content {
-    display: none;
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
 .hamburger-content ul {
     list-style: none;
     padding-left: 0;
@@ -468,14 +456,4 @@ body.dark {
 .future-section.dark, .games-section.dark, .school-section.dark {
     background-color: #121212;
     color: #ffffff;
-}
-
-.hamburger-menu span {
-    background-color: #fff; 
-}
-
-/* Styling for the Table of Contents */
-.toc-section {
-    padding: 20px;
-    border-radius: 8px;
 }

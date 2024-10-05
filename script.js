@@ -83,3 +83,18 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var anchors = document.querySelectorAll('a[href^="#"]');
+  anchors.forEach(function(anchor) {
+    anchor.addEventListener('click', function(event) {
+      event.preventDefault();
+      var target = document.querySelector(this.hash);
+      var top = target.offsetTop;
+      window.scrollTo({
+        top: top,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
