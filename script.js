@@ -17,46 +17,69 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOM fully loaded and parsed');
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
 
-    // Function to apply theme
-    function applyTheme(theme) {
-        if (theme === 'dark') {
-            body.classList.add('dark');
-            body.classList.remove('light');
-        } else {
-            body.classList.add('light');
-            body.classList.remove('dark');
-        }
-
-        document.querySelectorAll('.toc-section, .navbar, .about-section, .background-section, .future-section, .games-section, .school-section')
-    .forEach(section => {
-        if (section) {
-            if (theme === 'dark') {
-                section.classList.add('dark');
-                section.classList.remove('light');
-            } else {
-                section.classList.add('light');
-                section.classList.remove('dark');
-            }
-        }
-    });
-
+  // Function to apply theme
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      body.classList.add('dark');
+      body.classList.remove('light');
+    } else {
+      body.classList.add('light');
+      body.classList.remove('dark');
     }
+
+    document.querySelectorAll('.toc-section, .navbar, .about-section, .background-section, .future-section, .games-section, .school-section')
+      .forEach(section => {
+        if (section) {
+          if (theme === 'dark') {
+            section.classList.add('dark');
+            section.classList.remove('light');
+          } else {
+            section.classList.add('light');
+            section.classList.remove('dark');
+          }
+        }
+      });
+  }
 /*
-    // Get theme from local storage
-    const storedTheme = localStorage.getItem('theme') || 'light';
-    console.log('Stored theme:', storedTheme); // Log theme
-    applyTheme(storedTheme);
-    themeToggle.checked = storedTheme === 'dark';
+  // Get theme from local storage
+  const storedTheme = localStorage.getItem('theme') || 'light';
+  console.log('Stored theme:', storedTheme); // Log theme
+  applyTheme(storedTheme);
+  themeToggle.checked = storedTheme === 'dark';
 */
-    // On theme change
-    themeToggle.addEventListener('change', function () {
-        const theme = themeToggle.checked ? 'dark' : 'light';
-        applyTheme(theme);
-        localStorage.setItem('theme', theme);
-    });
-    
+  // On theme change
+  themeToggle.addEventListener('change', function () {
+    const theme = themeToggle.checked ? 'dark' : 'light';
+    applyTheme(theme);
+    localStorage.setItem('theme', theme);
+  });
 });
+
+// Add this to your script.js file
+const tocSection = document.getElementById('toc');
+const scrollToTopButton = document.querySelector('.scroll-to-top-button');
+
+window.addEventListener('scroll', () => {
+  if (!isElementInViewport(tocSection)) {
+    scrollToTopButton.style.display = 'block'; // show the button
+  } else {
+    scrollToTopButton.style.display = 'none'; // hide the button
+  }
+});
+
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll to top of page
+});
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}

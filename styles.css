@@ -428,6 +428,24 @@ p, ol {
     color: #3498db;
 }
 
+/* Add this to your styles.css file */
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* hide the button by default */
+  }
+  
+  .scroll-to-top-button:hover {
+    background-color: #444;
+  }
+
 /* Light Theme */
 body.light {
     background-color: #f4f4f4;
