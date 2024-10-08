@@ -25,9 +25,17 @@ document.addEventListener('DOMContentLoaded', function () {
     if (theme === 'dark') {
       body.classList.add('dark');
       body.classList.remove('light');
+      document.body.setAttribute(
+        "data-theme",
+        "dark"
+    );
     } else {
       body.classList.add('light');
       body.classList.remove('dark');
+      document.body.setAttribute(
+        "data-theme",
+        "light"
+    );
     }
 
     document.querySelectorAll('.toc-section, .navbar, .about-section, .background-section, .future-section, .games-section, .school-section')
