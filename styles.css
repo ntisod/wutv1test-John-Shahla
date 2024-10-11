@@ -317,19 +317,24 @@ p, ol {
 
 .about-section p {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 /* Background Section */
 .background-section p {
     text-align: left;
     margin-bottom: 15px;
+    margin: auto;
+    max-width: 800px;
 }
 
 /* Future Section */
 .future-section p {
     text-align: left;
     margin-bottom: 15px;
+    margin: auto;
+    max-width: 800px;
 }
 
 /* Games Section */
@@ -341,6 +346,8 @@ p, ol {
 
 .games-section li {
     margin-bottom: 10px;
+    margin: auto;
+    max-width: 800px;
 }
 
 .games-section a {
@@ -368,11 +375,13 @@ p, ol {
 .toc-section ul {
     list-style: none;
     padding-left: 0;
-    text-align: left;
+    text-align: center;
+    margin: auto;
 }
 
 .toc-section li {
     margin-bottom: 10px;
+    margin: auto;
 }
 
 .toc-section a {
@@ -389,6 +398,13 @@ p, ol {
 .school-section {
     background-color: #ecf0f1;
     text-align: center;
+}
+
+.school-section p {
+    text-align: left;
+    margin-bottom: 15px;
+    margin: auto;
+    max-width: 800px;
 }
 
 .school-section img {
