@@ -14,11 +14,15 @@ body {
 :root {
     --background: #e7e7e7;
     --text-color: #000;
+    --background-secondary: #f9f9f9;
+    --text-color-secondary: #333;
 }
 
 [data-theme="dark"] {
     --background: #000000;
     --text-color: #fff;
+    --background-secondary: #121212;
+    --text-color-secondary: #fff;
 }
 
 a[href^="#"] {
@@ -89,7 +93,7 @@ nav .nav-links a:hover {
     align-items: center;
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 5%;
     width: 200px;
     border-radius: 5px;
     display: none;
@@ -163,10 +167,12 @@ input:checked + .slider:before {
 
 /* Home Section Styling */
 .home-section {
-    padding: 100px 0;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
     text-align: center;
-    background-color: var(--background);
-    color: var(--text-color);
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
 }
 
 .home-section h2 {
@@ -196,8 +202,8 @@ input:checked + .slider:before {
 .contact-section {
     padding: 100px 0;
     text-align: center;
-    background-color: var(--background);
-    color: var(--text-color);
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
 }
 
 .contact-section h2 {
@@ -362,7 +368,7 @@ p, ol {
 
 /* Table of Contents */
 .toc-section {
-    background-color: #f9f9f9;
+    background-color: var(--background-secondary);
     padding: 30px 20px;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -397,7 +403,7 @@ p, ol {
 
 /* School Section */
 .school-section {
-    background-color: #ecf0f1;
+    background-color: var(--background-secondary);
     text-align: center;
 }
 
@@ -453,24 +459,24 @@ p, ol {
 
 /* Light Theme */
 body.light {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background);
+    color: var(--text-color-secondary);
 }
 
 .navbar.light, .toc-section.light, .about-section.light, .background-section.light,
 .future-section.light, .games-section.light, .school-section.light {
-    background-color: #ffffff;
-    color: #333;
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
 }
 
 /* Dark Theme */
 body.dark {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--background);
+    color: var(--text-color-secondary);
 }
 
 .navbar.dark, .toc-section.dark, .about-section.dark, .background-section.dark,
 .future-section.dark, .games-section.dark, .school-section.dark {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
 }

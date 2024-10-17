@@ -8,6 +8,9 @@
     <title>John Shahla's Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/main.png">
+    <meta property="og:title" content="John Shahla's Website">
+    <meta property="og:description" content="Welcome to my personal website, where you can learn more about me and get in touch.">
+    <meta property="og:image" content="images/main.png">
     <meta name="twitter:title" content="John Shahla's Website">
     <meta name="twitter:description" content="Welcome to my personal website, where you can learn more about me and get in touch.">
     <meta name="twitter:image" content="images/main.png">
@@ -16,24 +19,19 @@
 
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="nav">
         <div class="container">
             <img src="images/main.png" alt="" class="title-image">
             <h1 class="logo">JSH Website</h1>
-
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <!-- Hamburger menu for social links -->
             <div class="hamburger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <!-- Theme switcher inside container -->
             <div class="theme-switch-container">
                 <label class="theme-switch">
                     <input type="checkbox" id="themeToggle">
@@ -42,16 +40,12 @@
                     <span class="emoji moon" aria-hidden="true">🌙</span>
                 </label>
             </div>
-
         </div>
-
-        <!-- Social links menu -->
         <div class="hamburger-content">
             <ul class="social-links">
                 <li><a href="https://twitch.tv/johnshahla00">Twitch</a></li>
                 <li><a href="https://youtube.com/@johnshahla00">YouTube</a></li>
                 <li><a href="https://www.instagram.com/jo1sha/">Instagram</a></li>
-                <!-- <li><a href="om-mig.html">About me</a></li> -->
             </ul>
         </div>
     </nav>
@@ -65,7 +59,6 @@
         </div>
     </section>
 
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -73,8 +66,7 @@
             <form action="submit_form.php" method="post">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required
-                    style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
