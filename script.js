@@ -66,12 +66,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Add this to your script.js file
 const tocSection = document.getElementById('toc');
+const navBar = document.getElementById('nav');
 const scrollToTopButton = document.querySelector('.scroll-to-top-button');
 
 window.addEventListener('scroll', () => {
-  if (!isElementInViewport(tocSection)) {
+  if (!isElementInViewport(tocSection) || !isElementInViewport(navBar)) {
     scrollToTopButton.style.display = 'block'; // show the button
   } else {
     scrollToTopButton.style.display = 'none'; // hide the button
