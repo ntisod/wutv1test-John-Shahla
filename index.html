@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Shahla's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/main.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <img src="images/main.png" alt="" class="title-image">
+            <h1 class="logo">JSH Website</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="theme-switch-container">
+                <label class="theme-switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                    <span class="emoji sun" aria-hidden="true">🌞</span>
+                    <span class="emoji moon" aria-hidden="true">🌙</span>
+                </label>
+            </div>
+        </div>
+        <div class="hamburger-content">
+            <ul class="social-links">
+                <li><a href="https://twitch.tv/johnshahla00">Twitch</a></li>
+                <li><a href="https://youtube.com/@johnshahla00">YouTube</a></li>
+                <li><a href="https://www.instagram.com/jo1sha/">Instagram</a></li>
+                <li><a href="upphovsrätt.html">Rights</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Hello, I'm John</h2>
+            <p>Welcome to my personal website.</p>
+            <a href="om-mig.html" class="learn-more">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

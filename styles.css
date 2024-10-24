@@ -1,0 +1,558 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+:root {
+    --background: #e7e7e7;
+    --text-color: #000;
+    --background-secondary: #f9f9f9;
+    --text-color-secondary: #333;
+}
+
+[data-theme="dark"] {
+    --background: #000000;
+    --text-color: #fff;
+    --background-secondary: #121212;
+    --text-color-secondary: #fff;
+}
+
+a[href^="#"] {
+    scroll-behavior: smooth;
+  }
+
+/* Navbar Styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav .nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+
+.title-image {
+    max-width: 27px;
+    filter: grayscale(100%);
+}
+
+.hamburger-menu {
+    margin-left: auto;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    display: inline-block;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.hamburger-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 200px;
+    border-radius: 5px;
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.hamburger-content.show {
+    display: flex;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Dark theme switch */
+.theme-switch-container {
+    margin-left: 10px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.theme-switch .slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.theme-switch .slider:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translate(18px, -50%);
+}
+
+/* Home Section Styling */
+.home-section {
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
+}
+
+.home-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.learn-more {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.learn-more:hover {
+    background-color: #555;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #555;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 20px; 
+    filter: grayscale(100%);
+    margin-left: 10px; 
+    transition: filter 0.3s; 
+}
+
+/* Initial state: show the sun, hide the moon */
+.sun {
+    display: inline;
+}
+
+.moon {
+    display: none;
+}
+
+/* When the checkbox is checked (dark mode) */
+input:checked ~ .sun {
+    display: none; /* Hide the sun */
+}
+
+input:checked ~ .moon {
+    display: inline; /* Show the moon */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-content.show {
+        top: 60px;
+        right: 20px;
+    }
+
+    .theme-switch-container {
+        margin-right: auto;
+    }
+
+    .home-section,
+    .about-section,
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+    .contact-section form {
+        width: 90%;
+    }
+}
+
+/* General Section Styles */
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p, ol {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    max-width: 150px;
+    border: 3px solid #fff;
+}
+
+.about-section p {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Background Section */
+.background-section p {
+    text-align: left;
+    margin-bottom: 15px;
+    margin: auto;
+    max-width: 800px;
+}
+
+/* Future Section */
+.future-section p {
+    text-align: left;
+    margin-bottom: 15px;
+    margin: auto;
+    max-width: 800px;
+}
+
+/* Games Section */
+.games-section ol {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+}
+
+.games-section li {
+    margin-bottom: 10px;
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.games-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.games-section a:hover {
+    text-decoration: underline;
+}
+
+/* Table of Contents */
+.toc-section {
+    background-color: var(--background-secondary);
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.toc-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.toc-section ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.toc-section li {
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.toc-section a {
+    color: #245180;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.toc-section a:hover {
+    color: #3498db;
+}
+
+/* School Section */
+.school-section {
+    background-color: var(--background-secondary);
+    text-align: center;
+}
+
+.school-section p {
+    text-align: left;
+    margin-bottom: 15px;
+    margin: auto;
+    max-width: 800px;
+}
+
+.school-section img {
+    margin-top: 20px;
+}
+
+.school-section address {
+    margin-top: 15px;
+    font-style: normal;
+}
+
+.hamburger-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hamburger-content a {
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.hamburger-content a:hover {
+    color: #3498db;
+}
+
+/* Add this to your styles.css file */
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* hide the button by default */
+  }
+  
+  .scroll-to-top-button:hover {
+    background-color: #444;
+  }
+
+/* Light Theme */
+body.light {
+    background-color: var(--background);
+    color: var(--text-color-secondary);
+}
+
+.navbar.light, .toc-section.light, .about-section.light, .background-section.light,
+.future-section.light, .games-section.light, .school-section.light {
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: var(--background);
+    color: var(--text-color-secondary);
+}
+
+.navbar.dark, .toc-section.dark, .about-section.dark, .background-section.dark,
+.future-section.dark, .games-section.dark, .school-section.dark {
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
+}
+
+.slide-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(--background-secondary);
+    transition: left 0.3s ease-in-out;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.menu-open .slide-menu {
+    left: 0;
+}
+
+.slide-menu h2 {
+    color: var(--text-secondary);
+}
+
+.slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slide-menu ul li {
+    margin-bottom: 1rem;
+}
+
+.slide-menu ul li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--background-secondary);
+    color: var(--background-secondary);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+}
+
+.title-slide, .disclamer-slide, .question-slide {
+    background-color: var(--background-secondary);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title-slide h2 {
+    color: var(--text-color-secondary);
+    margin-top: 0;
+}
+
+.question-slide h3 {
+    color: var(--text-color-secondary);
+    margin-top: 0;
+}
+
+.question-slide ul {
+    padding-left: 1.5rem;
+}
+
+.question-slide li {
+    margin-bottom: 0.5rem;
+}
