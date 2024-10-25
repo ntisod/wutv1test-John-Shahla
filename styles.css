@@ -55,6 +55,7 @@ nav .logo {
 nav .nav-links {
     list-style: none;
     display: flex;
+    margin-left: auto;
 }
 
 nav .nav-links a {
@@ -257,6 +258,7 @@ input:checked + .slider:before {
     font-size: 20px; 
     filter: grayscale(100%);
     margin-left: 10px; 
+    margin-bottom: 5px;
     transition: filter 0.3s; 
 }
 
