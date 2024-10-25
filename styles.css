@@ -44,7 +44,7 @@ nav .container {
     width: 95%;
 }
 nav a{
-    color:var(--text-color-secondary);
+    color: #fff;
     text-decoration:none;
 }
 nav .logo {
@@ -100,9 +100,15 @@ nav .nav-links a:hover {
     width: 200px;
     border-radius: 5px;
     display: none;
-    background-color: #fff;
+    background-color: var(--background);
     padding: 20px;
+    gap: 5px;
+    outline: 5px solid #555;
+    border-color: var(--background-secondary);
 }
+.hamburger-content ul li a{
+    color: var(--text-color);
+} 
 
 .hamburger-content.show {
     display: flex;
