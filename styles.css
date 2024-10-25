@@ -43,7 +43,10 @@ nav .container {
     align-items: center;
     width: 95%;
 }
-
+nav a{
+    color:var(--text-color-secondary);
+    text-decoration:none;
+}
 nav .logo {
     font-size: 1.5rem;
     flex-grow: 1;
