@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +26,7 @@ body {
 
 a[href^="#"] {
     scroll-behavior: smooth;
-  }
+}
 
 /* Navbar Styles */
 nav {
@@ -43,10 +42,12 @@ nav .container {
     align-items: center;
     width: 95%;
 }
-nav a{
+
+nav a {
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 nav .logo {
     font-size: 1.5rem;
     flex-grow: 1;
@@ -107,10 +108,11 @@ nav .nav-links a:hover {
     outline: 5px solid #555;
     border-color: var(--background-secondary);
 }
-.hamburger-content ul li a{
+
+.hamburger-content ul li a {
     color: var(--text-color);
     margin: auto;
-} 
+}
 
 .menu-icon {
     filter: grayscale(100%);
@@ -171,11 +173,11 @@ nav .nav-links a:hover {
     transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translate(18px, -50%);
 }
 
@@ -231,7 +233,8 @@ input:checked + .slider:before {
     max-width: 600px;
 }
 
-.contact-section input, .contact-section textarea {
+.contact-section input,
+.contact-section textarea {
     font-family: Arial, Helvetica, sans-serif;
     width: calc(100% - 20px);
     padding: 10px;
@@ -259,11 +262,11 @@ input:checked + .slider:before {
 }
 
 .emoji {
-    font-size: 20px; 
+    font-size: 20px;
     filter: grayscale(100%);
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-bottom: 5px;
-    transition: filter 0.3s; 
+    transition: filter 0.3s;
 }
 
 /* Initial state: show the sun, hide the moon */
@@ -276,12 +279,14 @@ input:checked + .slider:before {
 }
 
 /* When the checkbox is checked (dark mode) */
-input:checked ~ .sun {
-    display: none; /* Hide the sun */
+input:checked~.sun {
+    display: none;
+    /* Hide the sun */
 }
 
-input:checked ~ .moon {
-    display: inline; /* Show the moon */
+input:checked~.moon {
+    display: inline;
+    /* Show the moon */
 }
 
 /* Responsive styling */
@@ -321,7 +326,8 @@ h2 {
     text-align: center;
 }
 
-p, ol {
+p,
+ol {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -465,12 +471,13 @@ p, ol {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: none; /* hide the button by default */
-  }
-  
-  .scroll-to-top-button:hover {
+    display: none;
+    /* hide the button by default */
+}
+
+.scroll-to-top-button:hover {
     background-color: #444;
-  }
+}
 
 /* Light Theme */
 body.light {
@@ -478,8 +485,13 @@ body.light {
     color: var(--text-color-secondary);
 }
 
-.navbar.light, .toc-section.light, .about-section.light, .background-section.light,
-.future-section.light, .games-section.light, .school-section.light {
+.navbar.light,
+.toc-section.light,
+.about-section.light,
+.background-section.light,
+.future-section.light,
+.games-section.light,
+.school-section.light {
     background-color: var(--background-secondary);
     color: var(--text-color-secondary);
 }
@@ -490,8 +502,13 @@ body.dark {
     color: var(--text-color-secondary);
 }
 
-.navbar.dark, .toc-section.dark, .about-section.dark, .background-section.dark,
-.future-section.dark, .games-section.dark, .school-section.dark {
+.navbar.dark,
+.toc-section.dark,
+.about-section.dark,
+.background-section.dark,
+.future-section.dark,
+.games-section.dark,
+.school-section.dark {
     background-color: var(--background-secondary);
     color: var(--text-color-secondary);
 }
@@ -546,7 +563,9 @@ body.dark {
     padding-top: 3rem;
 }
 
-.title-slide, .disclamer-slide, .question-slide {
+.title-slide,
+.disclamer-slide,
+.question-slide {
     background-color: var(--background-secondary);
     border-radius: 10px;
     padding: 2rem;

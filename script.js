@@ -3,16 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburgerContent = document.querySelector(".hamburger-content");
 
   hamburgerMenu.addEventListener("click", function () {
-      hamburgerContent.classList.toggle("show");
+    hamburgerContent.classList.toggle("show");
   });
 
   // Dark mode toggle
   const themeToggle = document.getElementById("themeToggle");
   themeToggle.addEventListener("change", function () {
-      document.body.setAttribute(
-          "data-theme",
-          themeToggle.checked ? "dark" : "light"
-      );
+    document.body.setAttribute(
+      "data-theme",
+      themeToggle.checked ? "dark" : "light"
+    );
   });
 });
 
@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.setAttribute(
         "data-theme",
         "dark"
-    );
+      );
     } else {
       body.classList.add('light');
       body.classList.remove('dark');
       document.body.setAttribute(
         "data-theme",
         "light"
-    );
+      );
     }
 
     document.querySelectorAll('.toc-section, .navbar, .about-section, .background-section, .future-section, .games-section, .school-section')
@@ -80,6 +80,7 @@ window.addEventListener('scroll', () => {
 
 scrollToTopButton.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll to top of page
+  scrollToTopButton.style.display = 'none';
 });
 
 function isElementInViewport(el) {
@@ -92,10 +93,10 @@ function isElementInViewport(el) {
   );
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var anchors = document.querySelectorAll('a[href^="#"]');
-  anchors.forEach(function(anchor) {
-    anchor.addEventListener('click', function(event) {
+  anchors.forEach(function (anchor) {
+    anchor.addEventListener('click', function (event) {
       event.preventDefault();
       var target = document.querySelector(this.hash);
       var top = target.offsetTop;
