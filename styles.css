@@ -108,20 +108,15 @@ nav .nav-links a:hover {
     border-color: var(--background-secondary);
 }
 .hamburger-content ul li a{
-    display: flex;
     color: var(--text-color);
-} 
-.hamburger-content img{
-    max-width: 25px;
-    max-height: auto;
-    margin-right: 5px;
-    margin-top: 5px;
+    margin: auto;
 } 
 
 .menu-icon {
-    max-width: 25px;
+    filter: grayscale(100%);
+    max-width: 16px;
     max-height: auto;
-    margin-right: 10px; 
+    margin-right: 5px;
 }
 
 .hamburger-content.show {
