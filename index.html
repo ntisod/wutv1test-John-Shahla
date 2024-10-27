@@ -57,21 +57,21 @@
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="container">
-            <h2>Hello, I'm John</h2>
-            <p>Welcome to my personal website.</p>
-            <a href="om-mig.html" class="learn-more">Learn More About Me</a>
+            <h2 id="home-title">Hello, I'm John</h2> <!-- Added ID for translation -->
+            <p id="home-description">Welcome to my personal website.</p> <!-- Added ID for translation -->
+            <a href="om-mig.html" class="learn-more" id="learn-more">About Me</a>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contact Me</h2>
+            <h2 id="contact-title">Contact Me</h2> <!-- Added ID for translation -->
             <form action="submit_form.php" method="post">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <button type="submit" id="send-message">Send Message</button>
             </form>
         </div>
     </section>

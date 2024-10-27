@@ -28,7 +28,6 @@ a[href^="#"] {
     scroll-behavior: smooth;
 }
 
-/* Navbar Styles */
 nav {
     background: #333;
     color: #fff;
@@ -152,7 +151,6 @@ nav .nav-links a:hover {
     text-decoration: underline;
 }
 
-/* Dark theme switch */
 .theme-switch-container {
     margin-left: 10px;
 }
@@ -192,7 +190,6 @@ input:checked+.slider:before {
     transform: translate(18px, -50%);
 }
 
-/* Home Section Styling */
 .home-section {
     padding: 30px 20px;
     border-radius: 10px;
@@ -225,7 +222,6 @@ input:checked+.slider:before {
     background-color: #555;
 }
 
-/* Contact Section Styling */
 .contact-section {
     padding: 100px 0;
     text-align: center;
@@ -280,7 +276,6 @@ input:checked+.slider:before {
     transition: filter 0.3s;
 }
 
-/* Initial state: show the sun, hide the moon */
 .sun {
     display: inline;
 }
@@ -289,18 +284,14 @@ input:checked+.slider:before {
     display: none;
 }
 
-/* When the checkbox is checked (dark mode) */
 input:checked~.sun {
     display: none;
-    /* Hide the sun */
 }
 
 input:checked~.moon {
     display: inline;
-    /* Show the moon */
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -326,7 +317,6 @@ input:checked~.moon {
     }
 }
 
-/* General Section Styles */
 section {
     padding: 50px 0;
 }
@@ -344,7 +334,6 @@ ol {
     margin-bottom: 20px;
 }
 
-/* About Section */
 .about-section img {
     display: block;
     margin: 20px auto;
@@ -359,7 +348,6 @@ ol {
     max-width: 800px;
 }
 
-/* Background Section */
 .background-section p {
     text-align: left;
     margin-bottom: 15px;
@@ -367,7 +355,6 @@ ol {
     max-width: 800px;
 }
 
-/* Future Section */
 .future-section p {
     text-align: left;
     margin-bottom: 15px;
@@ -375,7 +362,6 @@ ol {
     max-width: 800px;
 }
 
-/* Games Section */
 .games-section ol {
     list-style-position: inside;
     padding-left: 0;
@@ -398,7 +384,6 @@ ol {
     text-decoration: underline;
 }
 
-/* Table of Contents */
 .toc-section {
     background-color: var(--background-secondary);
     padding: 30px 20px;
@@ -433,7 +418,6 @@ ol {
     color: #3498db;
 }
 
-/* School Section */
 .school-section {
     background-color: var(--background-secondary);
     text-align: center;
@@ -471,7 +455,6 @@ ol {
     color: #3498db;
 }
 
-/* Add this to your styles.css file */
 .scroll-to-top-button {
     position: fixed;
     bottom: 20px;
@@ -483,14 +466,12 @@ ol {
     border-radius: 5px;
     cursor: pointer;
     display: none;
-    /* hide the button by default */
 }
 
 .scroll-to-top-button:hover {
     background-color: #444;
 }
 
-/* Light Theme */
 body.light {
     background-color: var(--background);
     color: var(--text-color-secondary);
@@ -507,7 +488,6 @@ body.light {
     color: var(--text-color-secondary);
 }
 
-/* Dark Theme */
 body.dark {
     background-color: var(--background);
     color: var(--text-color-secondary);
