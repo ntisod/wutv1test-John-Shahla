@@ -125,6 +125,17 @@ nav .nav-links a:hover {
     display: flex;
 }
 
+.languageSwitcherLabel{
+    color: var(--text-color);
+}
+
+.languageSwitcher{
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
+    outline: 2px solid #555;
+    border-radius: 5px;
+}
+
 .social-links {
     list-style: none;
     padding: 0;
