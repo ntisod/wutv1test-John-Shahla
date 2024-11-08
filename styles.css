@@ -296,31 +296,6 @@ input:checked~.moon {
     display: inline;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger-content.show {
-        top: 60px;
-        right: 20px;
-    }
-
-    .theme-switch-container {
-        margin-right: auto;
-    }
-
-    .home-section,
-    .about-section,
-    .contact-section {
-        padding: 50px 20px;
-    }
-
-    .contact-section form {
-        width: 90%;
-    }
-}
-
 section {
     padding: 50px 0;
 }
@@ -582,10 +557,14 @@ body.dark {
 }
 
 .tim {
-    background-color: var(--background-secondary); 
-    color: var(--text-color-secondary); 
+    background-color: var(--background-secondary);
+    color: var(--text-color-secondary);
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
+    max-width: 1300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .tim h1 {
@@ -593,29 +572,84 @@ body.dark {
     font-size: 2.5em;
     color: var(--text-color);
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .tim h2 {
     font-size: 1.5em;
     color: var(--text-color);
-    border-bottom: 2px solid #444;
     padding-bottom: 5px;
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .tim p {
     font-size: 1.1em;
-    line-height: 1.6em;
+    line-height: 1.8em;
     margin: 15px 0;
-    padding: 10px;
+    padding: 5px 0;
 }
 
-.tim img {
+.tim .tim-image {
     float: right;
-    width: 320px;
-    border: var(--text-color-secondary) 5px solid;
-    padding: 10px;
-    margin: 5px 0 20px 20px;
+    border: var(--text-color-secondary) 4px solid;
+    padding: 8px;
+    margin: 0 0 15px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tim .tim-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tim .tim-image a {
+    font-size: 0.85em;
+    color: #999;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tim .tim-image a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-content.show {
+        top: 60px;
+        right: 20px;
+    }
+
+    .theme-switch-container {
+        margin-right: auto;
+    }
+
+    .home-section,
+    .about-section,
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+    .contact-section form {
+        width: 90%;
+    }
+    .tim {
+        padding: 15px;
+    }
+
+    .tim .tim-image {
+        float: none;
+        margin: 0 auto 20px auto;
+        text-align: center;
+    }
 }
