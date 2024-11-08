@@ -517,7 +517,7 @@ body.dark {
     top: 1rem;
     left: 1rem;
     background-color: var(--background-secondary);
-    color: var(--background-secondary);
+    color: var(--text-color-secondary);
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
