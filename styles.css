@@ -28,6 +28,10 @@ a[href^="#"] {
     scroll-behavior: smooth;
 }
 
+header {
+    text-align: center;
+}
+
 nav {
     background: #333;
     color: #fff;
