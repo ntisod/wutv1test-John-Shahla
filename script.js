@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
       contactTitle: "Contact Me",
       sendMessage: "Send Message",
       learnMore: "About Me",
+      aboutSite: "About Me",
+      rightsSite: "Rights",
     },
     sv: {
       homeTitle: "Hej, jag är John",
@@ -49,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
       contactTitle: "Kontakta Mig",
       sendMessage: "Skicka Meddelande",
       learnMore: "Om Mig",
+      aboutSite: "Om Mig",
+      rightsSite: "Rättigheter",
     },
   };
 
@@ -70,5 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('contact-title').textContent = translation.contactTitle;
     document.getElementById('send-message').textContent = translation.sendMessage;
     document.getElementById('learn-more').textContent = translation.learnMore;
+    document.getElementById('about-site').textContent = translation.aboutSite;
+    document.getElementById('rights-site').textContent = translation.rightsSite;
   }
 });

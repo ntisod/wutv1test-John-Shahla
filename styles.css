@@ -43,7 +43,7 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 100%;
 }
 
 nav a {
@@ -68,7 +68,7 @@ nav .nav-links a {
     padding: 0.5rem 1rem;
 }
 
-nav .nav-links a:hover {
+nav a:hover {
     background: #555;
     border-radius: 5px;
     scroll-behavior: smooth;
