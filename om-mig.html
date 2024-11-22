@@ -13,133 +13,138 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
-            <a href="index.html" aria-label="Home"><img src="images/main.png" alt="" class="title-image"></a>
-            <a href="index.html">
-                <h1 class="logo">JSH Website</h1>
-            </a>
-            <ul class="nav-links">
-                <li><a href="upphovsrätt.html">Rights</a></li>
-            </ul>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a href="index.html" aria-label="Home"><img src="images/main.png" alt="" class="title-image"></a>
+                <a href="index.html">
+                    <h1 class="logo">JSH Website</h1>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="upphovsrätt.html">Rights</a></li>
+                    <li><a href="om-mig.html">About Me</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="theme-switch-container">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                        <span class="emoji sun" aria-hidden="true">🌞</span>
+                        <span class="emoji moon" aria-hidden="true">🌙</span>
+                    </label>
+                </div>
             </div>
-            <div class="theme-switch-container">
-                <label class="theme-switch">
-                    <input type="checkbox" id="themeToggle">
-                    <span class="slider round"></span>
-                    <span class="emoji sun" aria-hidden="true">🌞</span>
-                    <span class="emoji moon" aria-hidden="true">🌙</span>
-                </label>
+            <div class="hamburger-content">
+                <ul class="social-links">
+                    <li><a href="https://twitch.tv/johnshahla00"><img src="images/Twitch.png" alt="johnshahla00"
+                                class="menu-icon">Twitch</a></li>
+                    <li><a href="https://youtube.com/@johnshahla00"><img src="images/Youtube.png" alt="johnshahla00"
+                                class="menu-icon">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/jo1sha/"><img src="images/Instagram.png" alt="jo1sha"
+                                class="menu-icon">Instagram</a></li>
+                    <li><a href="tim-berners-lee.html">Tim Berners-Lee</a></li>
+                    <li><a href="webbens-historia.html" id="web-history-name">Webbens Historia</a></li>
+                </ul>
+                <!-- Language Switcher -->
+                <label for="languageSwitcher" class="languageSwitcherLabel">Select Language:</label>
+                <select id="languageSwitcher" class="languageSwitcher">
+                    <option value="en">English</option>
+                    <option value="sv">Svenska</option>
+                </select>
+            </div
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Table of Contents -->
+        <section aria-label="Table of Contents" class="toc-section">
+            <div class="container">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li id="about-name"><a href="#about-me">About Me - John Shahla</a></li>
+                    <li id="background"><a href="#background">Background</a></li>
+                    <li id="thoughts-future"><a href="#thoughts-future">Thoughts on the Future</a></li>
+                    <li id="fav-games"><a href="#favorite-games">My Favorite Games</a></li>
+                    <li><a href="#school-info">NTI Gymnasiet</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="hamburger-content">
-            <ul class="social-links">
-                <li><a href="https://twitch.tv/johnshahla00"><img src="images/Twitch.png" alt="johnshahla00"
-                            class="menu-icon">Twitch</a></li>
-                <li><a href="https://youtube.com/@johnshahla00"><img src="images/Youtube.png" alt="johnshahla00"
-                            class="menu-icon">YouTube</a></li>
-                <li><a href="https://www.instagram.com/jo1sha/"><img src="images/Instagram.png" alt="jo1sha"
-                            class="menu-icon">Instagram</a></li>
-                <li><a href="tim-berners-lee.html">Tim Berners-Lee</a></li>
-                <li><a href="webbens-historia.html">Webbens Historia</a></li>
-            </ul>
-            <!-- Language Switcher -->
-            <label for="languageSwitcher" class="languageSwitcherLabel">Select Language:</label>
-            <select id="languageSwitcher" class="languageSwitcher">
-                <option value="en">English</option>
-                <option value="sv">Svenska</option>
-            </select>
-        </div>
-    </nav>
+        </section>
 
-    <!-- Table of Contents -->
-    <section id="toc" class="toc-section">
-        <div class="container">
-            <h2>Table of Contents</h2>
-            <ul>
-                <li><a href="#about-me">About Me - John Shahla</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#thoughts-future">Thoughts on the Future</a></li>
-                <li><a href="#favorite-games">My Favorite Games</a></li>
-                <li><a href="#school-info">NTI Gymnasiet</a></li>
-            </ul>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="about-me" class="about-section">
+            <div class="container">
+                <h2>About Me - John Shahla</h2>
+                <img src="images/main.png" alt="John Shahla" class="profile-image">
+                <p>Welcome to my about page! I am John Shahla, a 17-year-old gamer, streamer, and programmer. Below, you'll
+                    find more about my journey, background, and plans for the future.</p>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about-me" class="about-section">
-        <div class="container">
-            <h2>About Me - John Shahla</h2>
-            <img src="images/main.png" alt="John Shahla" class="profile-image">
-            <p>Welcome to my about page! I am John Shahla, a 17-year-old gamer, streamer, and programmer. Below, you'll
-                find more about my journey, background, and plans for the future.</p>
-        </div>
-    </section>
+        <!-- Background Section -->
+        <section id="background" class="background-section">
+            <div class="container">
+                <h2>Background</h2>
+                <p>I began my programming journey in 2019 at the age of 12, starting with Node.js on my phone. Since then,
+                    I’ve explored game development, web development, and creating Discord bots. My passion for coding
+                    continues to grow every day.</p>
+                <p>I attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a>
+                    because of their strong focus on tech and innovation. It’s a great environment to expand my skills in
+                    programming and development.</p>
+            </div>
+        </section>
 
-    <!-- Background Section -->
-    <section id="background" class="background-section">
-        <div class="container">
-            <h2>Background</h2>
-            <p>I began my programming journey in 2019 at the age of 12, starting with Node.js on my phone. Since then,
-                I’ve explored game development, web development, and creating Discord bots. My passion for coding
-                continues to grow every day.</p>
-            <p>I attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a>
-                because of their strong focus on tech and innovation. It’s a great environment to expand my skills in
-                programming and development.</p>
-        </div>
-    </section>
+        <!-- Future Section -->
+        <section id="thoughts-future" class="future-section">
+            <div class="container">
+                <h2>Thoughts on the Future</h2>
+                <p>In the future, I aim to continue honing my skills in game development and web programming. I’m
+                    particularly interested in building applications that can improve user experience, both in gaming and
+                    everyday life. I am excited about what the future holds in the tech world.</p>
+            </div>
+        </section>
 
-    <!-- Future Section -->
-    <section id="thoughts-future" class="future-section">
-        <div class="container">
-            <h2>Thoughts on the Future</h2>
-            <p>In the future, I aim to continue honing my skills in game development and web programming. I’m
-                particularly interested in building applications that can improve user experience, both in gaming and
-                everyday life. I am excited about what the future holds in the tech world.</p>
-        </div>
-    </section>
+        <!-- Favorite Games Section -->
+        <section id="favorite-games" class="games-section">
+            <div class="container">
+                <h2>My Favorite Games</h2>
+                <ol>
+                    <li><a href="https://en.wikipedia.org/wiki/Valorant" target="_blank">Valorant</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank">Minecraft</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Cyberpunk_2077" target="_blank">Cyberpunk 2077</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" target="_blank">The Witcher 3</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Polytrack" target="_blank">Polytrack</a></li>
+                </ol>
+            </div>
+        </section>
 
-    <!-- Favorite Games Section -->
-    <section id="favorite-games" class="games-section">
-        <div class="container">
-            <h2>My Favorite Games</h2>
-            <ol>
-                <li><a href="https://en.wikipedia.org/wiki/Valorant" target="_blank">Valorant</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank">Minecraft</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Cyberpunk_2077" target="_blank">Cyberpunk 2077</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" target="_blank">The Witcher 3</a>
-                </li>
-                <li><a href="https://en.wikipedia.org/wiki/Polytrack" target="_blank">Polytrack</a></li>
-            </ol>
-        </div>
-    </section>
+        <!-- School Info Section -->
+        <section id="school-info" class="school-section">
+            <div class="container">
+                <h2>NTI Gymnasiet</h2>
+                <p>I currently attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet
+                        Södertälje</a>, which has been an amazing school that aligns perfectly with my interests in
+                    technology and innovation. Their focus on cutting-edge tech helps me grow as a developer.</p>
+                <div>
+                    <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">
+                        <img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype.svg" alt="NTI Gymnasiet Logo"
+                            class="school-logo">
+                    </a>
+                    <address>
+                        NTI Gymnasiet Södertälje<br>
+                        Wedavägen 3C,<br>
+                        152 42 Södertälje, Sweden<br>
+                    </address>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <button class="scroll-to-top-button">Scroll to top</button>
-
-    <!-- School Info Section -->
-    <section id="school-info" class="school-section">
-        <div class="container">
-            <h2>NTI Gymnasiet</h2>
-            <p>I currently attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet
-                    Södertälje</a>, which has been an amazing school that aligns perfectly with my interests in
-                technology and innovation. Their focus on cutting-edge tech helps me grow as a developer.</p>
-            <div>
-                <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">
-                    <img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype.svg" alt="NTI Gymnasiet Logo"
-                        class="school-logo">
-                </a>
-                <address>
-                    NTI Gymnasiet Södertälje<br>
-                    Wedavägen 3C,<br>
-                    152 42 Södertälje, Sweden<br>
-                </address>
-            </div>
-        </div>
-    </section>
 
     <script src="script.js"></script>
 </body>

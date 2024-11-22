@@ -10,6 +10,12 @@
       }
     ],
     "no-inline-styles": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id": "off"
+      }
+    ]
   }
 }
