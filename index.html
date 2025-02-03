@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Shahla's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/main.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a href="index.html" aria-label="Home"><img src="images/main.png" alt="" class="title-image"></a>
+                <a href="index.html">
+                    <h1 class="logo" id="logo">JSH Website</h1>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="upphovsrätt.html" id="rights-site">Rights</a></li>
+                    <li><a href="om-mig.html" id="about-site">About Me</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="theme-switch-container">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                        <span class="emoji sun" aria-hidden="true">🌞</span>
+                        <span class="emoji moon" aria-hidden="true">🌙</span>
+                    </label>
+                </div>
+            </div>
+            <div class="hamburger-content">
+                <ul class="social-links">
+                    <li><a href="https://twitch.tv/johnshahla00"><img src="images/Twitch.png" alt="johnshahla00"
+                                class="menu-icon">Twitch</a></li>
+                    <li><a href="https://youtube.com/@johnshahla00"><img src="images/Youtube.png" alt="johnshahla00"
+                                class="menu-icon">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/jo1sha/"><img src="images/Instagram.png" alt="jo1sha"
+                                class="menu-icon">Instagram</a></li>
+                    <li><a href="tim-berners-lee.html">Tim Berners-Lee</a></li>
+                    <li><a href="webbens-historia.html" id="web-history-name">Webbens Historia</a></li>
+                    <li><a href="förmular.html">Forms</a></li>
+                </ul>
+                <!-- Language Switcher -->
+                <label for="languageSwitcher" class="languageSwitcherLabel">Select Language:</label>
+                <select id="languageSwitcher" class="languageSwitcher">
+                    <option value="en">English</option>
+                    <option value="sv">Svenska</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <main>
+        <section id="home" class="home-section">
+            <div class="container">
+                <h2 id="home-title">Hello, I'm John</h2>
+                <p id="home-description">Welcome to my personal website.</p>
+                <a href="om-mig.html" class="learn-more" id="learn-more">About Me</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 id="contact-title">Contact Me</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name" id="name-label">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email" id="email-label">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message" id="message-label">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit" id="send-message">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
