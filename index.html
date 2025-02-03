@@ -17,11 +17,11 @@
             <div class="container">
                 <a href="index.html" aria-label="Home"><img src="images/main.png" alt="" class="title-image"></a>
                 <a href="index.html">
-                    <h1 class="logo">JSH Website</h1>
+                    <h1 class="logo" id="logo">JSH Website</h1>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="upphovsrätt.html">Rights</a></li>
-                    <li><a href="om-mig.html">About Me</a></li>
+                    <li><a href="upphovsrätt.html" id="rights-site">Rights</a></li>
+                    <li><a href="om-mig.html" id="about-site">About Me</a></li>
                 </ul>
                 <div class="hamburger-menu">
                     <span></span>
@@ -54,7 +54,7 @@
                     <option value="en">English</option>
                     <option value="sv">Svenska</option>
                 </select>
-            </div
+            </div>
         </nav>
     </header>
 
@@ -73,13 +73,13 @@
             <div class="container">
                 <h2 id="contact-title">Contact Me</h2>
                 <form action="submit_form.php" method="post">
-                    <label for="name">Your Name</label>
+                    <label for="name" id="name-label">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                     
-                    <label for="email">Your Email</label>
+                    <label for="email" id="email-label">Your Email</label>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
                     
-                    <label for="message">Your Message</label>
+                    <label for="message" id="message-label">Your Message</label>
                     <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     
                     <button type="submit" id="send-message">Send Message</button>

@@ -18,11 +18,11 @@
             <div class="container">
                 <a href="index.html" aria-label="Home"><img src="images/main.png" alt="" class="title-image"></a>
                 <a href="index.html">
-                    <h1 class="logo">JSH Website</h1>
+                    <h1 class="logo" id="logo">JSH Website</h1>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="upphovsrätt.html">Rights</a></li>
-                    <li><a href="om-mig.html">About Me</a></li>
+                    <li><a href="upphovsrätt.html" id="rights-site">Rights</a></li>
+                    <li><a href="om-mig.html" id="about-site">About Me</a></li>
                 </ul>
                 <div class="hamburger-menu">
                     <span></span>
@@ -55,7 +55,7 @@
                     <option value="en">English</option>
                     <option value="sv">Svenska</option>
                 </select>
-            </div
+            </div>
         </nav>
     </header>
 
@@ -64,13 +64,13 @@
         <!-- Table of Contents -->
         <section aria-label="Table of Contents" class="toc-section">
             <div class="container">
-                <h2>Table of Contents</h2>
+                <h2 id="toc-title">Table of Contents</h2>
                 <ul>
-                    <li id="about-name"><a href="#about-me">About Me - John Shahla</a></li>
-                    <li id="background"><a href="#background">Background</a></li>
-                    <li id="thoughts-future"><a href="#thoughts-future">Thoughts on the Future</a></li>
-                    <li id="fav-games"><a href="#favorite-games">My Favorite Games</a></li>
-                    <li><a href="#school-info">NTI Gymnasiet</a></li>
+                    <li><a href="#about-me" id="about-name">About Me - John Shahla</a></li>
+                    <li><a href="#background" id="background">Background</a></li>
+                    <li><a href="#thoughts-future" id="thoughts-future">Thoughts on the Future</a></li>
+                    <li><a href="#favorite-games" id="fav-games">My Favorite Games</a></li>
+                    <li><a href="#school-info" id="school-info">NTI Gymnasiet</a></li>
                 </ul>
             </div>
         </section>
@@ -78,9 +78,9 @@
         <!-- About Section -->
         <section id="about-me" class="about-section">
             <div class="container">
-                <h2>About Me - John Shahla</h2>
+                <h2 id="about-title">About Me - John Shahla</h2>
                 <img src="images/main.png" alt="John Shahla" class="profile-image">
-                <p>Welcome to my about page! I am John Shahla, a 17-year-old gamer, streamer, and programmer. Below, you'll
+                <p id="about-description">Welcome to my about page! I am John Shahla, a 17-year-old gamer, streamer, and programmer. Below, you'll
                     find more about my journey, background, and plans for the future.</p>
             </div>
         </section>
@@ -88,11 +88,11 @@
         <!-- Background Section -->
         <section id="background" class="background-section">
             <div class="container">
-                <h2>Background</h2>
-                <p>I began my programming journey in 2019 at the age of 12, starting with Node.js on my phone. Since then,
+                <h2 id="background-title">Background</h2>
+                <p id="background-data-1">I began my programming journey in 2019 at the age of 12, starting with Node.js on my phone. Since then,
                     I’ve explored game development, web development, and creating Discord bots. My passion for coding
                     continues to grow every day.</p>
-                <p>I attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a>
+                <p id="background-data-2">I attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a>
                     because of their strong focus on tech and innovation. It’s a great environment to expand my skills in
                     programming and development.</p>
             </div>
@@ -101,8 +101,8 @@
         <!-- Future Section -->
         <section id="thoughts-future" class="future-section">
             <div class="container">
-                <h2>Thoughts on the Future</h2>
-                <p>In the future, I aim to continue honing my skills in game development and web programming. I’m
+                <h2 id="thoughts-future-title">Thoughts on the Future</h2>
+                <p id="thoughts-future-data">In the future, I aim to continue honing my skills in game development and web programming. I’m
                     particularly interested in building applications that can improve user experience, both in gaming and
                     everyday life. I am excited about what the future holds in the tech world.</p>
             </div>
@@ -111,7 +111,7 @@
         <!-- Favorite Games Section -->
         <section id="favorite-games" class="games-section">
             <div class="container">
-                <h2>My Favorite Games</h2>
+                <h2 id="fav-games-title">My Favorite Games</h2>
                 <ol>
                     <li><a href="https://en.wikipedia.org/wiki/Valorant" target="_blank">Valorant</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank">Minecraft</a></li>
@@ -125,8 +125,8 @@
         <!-- School Info Section -->
         <section id="school-info" class="school-section">
             <div class="container">
-                <h2>NTI Gymnasiet</h2>
-                <p>I currently attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet
+                <h2 id="school-info-title">NTI Gymnasiet</h2>
+                <p id="school-data">I currently attend <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet
                         Södertälje</a>, which has been an amazing school that aligns perfectly with my interests in
                     technology and innovation. Their focus on cutting-edge tech helps me grow as a developer.</p>
                 <div>
