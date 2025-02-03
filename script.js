@@ -127,4 +127,50 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('school-info-title').textContent = translation.schoolInfoTitle;
     document.getElementById('school-data').textContent = translation.schoolData;
   }
+
+  // Form validation for förmular.html
+  const registrationForm = document.getElementById('registrationForm');
+  if (registrationForm) {
+    registrationForm.addEventListener('submit', function(event) {
+      const form = event.target;
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const age = form.age.value.trim();
+      const gender = form.gender.value;
+      const interests = form.interests.value.trim();
+      const profilePicture = form['profile-picture'].files[0];
+      const bio = form.bio.value.trim();
+      const location = form.location.value.trim();
+      const preferences = form.preferences.value.trim();
+      const occupation = form.occupation.value.trim();
+      const hobbies = form.hobbies.value.trim();
+      const relationshipStatus = form['relationship-status'].value;
+      const lookingFor = form['looking-for'].value;
+
+      if (!name || !email || !age || !gender || !interests || !profilePicture || !bio || !location || !preferences || !occupation || !hobbies || !relationshipStatus || !lookingFor) {
+        alert('Please fill out all fields.');
+        event.preventDefault();
+        return;
+      }
+
+      if (isNaN(age) || age <= 0) {
+        alert('Please enter a valid age.');
+        event.preventDefault();
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault();
+        return;
+      }
+
+      alert('Form submitted successfully!');
+    });
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+  }
 });
