@@ -624,6 +624,59 @@ body.dark {
     text-decoration: underline;
 }
 
+.form-section {
+    background-color: var(--background-secondary);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color-secondary);
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-color-secondary);
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.form-section button {
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #555;
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
