@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating App Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/main.png">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a href="index.html" aria-label="Home"><img src="images/main.png" alt="" class="title-image"></a>
+                <a href="index.html">
+                    <h1 class="logo">JSH Website</h1>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="upphovsrätt.html">Rights</a></li>
+                    <li><a href="om-mig.html">About Me</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="theme-switch-container">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                        <span class="emoji sun" aria-hidden="true">🌞</span>
+                        <span class="emoji moon" aria-hidden="true">🌙</span>
+                    </label>
+                </div>
+            </div>
+            <div class="hamburger-content">
+                <ul class="social-links">
+                    <li><a href="https://twitch.tv/johnshahla00"><img src="images/Twitch.png" alt="johnshahla00"
+                                class="menu-icon">Twitch</a></li>
+                    <li><a href="https://youtube.com/@johnshahla00"><img src="images/Youtube.png" alt="johnshahla00"
+                                class="menu-icon">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/jo1sha/"><img src="images/Instagram.png" alt="jo1sha"
+                                class="menu-icon">Instagram</a></li>
+                    <li><a href="tim-berners-lee.html">Tim Berners-Lee</a></li>
+                    <li><a href="webbens-historia.html" id="web-history-name">Webbens Historia</a></li>
+                    <li><a href="förmular.html">Forms</a></li>
+                </ul>
+                <!-- Language Switcher -->
+                <label for="languageSwitcher" class="languageSwitcherLabel">Select Language:</label>
+                <select id="languageSwitcher" class="languageSwitcher">
+                    <option value="en">English</option>
+                    <option value="sv">Svenska</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="container">
+                <h2>Dating App Registration</h2>
+                <form id="registrationForm" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Your Age" required>
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="interests">Interests</label>
+                    <textarea id="interests" name="interests" rows="4" placeholder="Your Interests" required></textarea>
+
+                    <label for="profile-picture">Profile Picture</label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" rows="5" placeholder="Tell us about yourself" required></textarea>
+
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Your Location" required>
+
+                    <label for="preferences">Dating Preferences</label>
+                    <textarea id="preferences" name="preferences" rows="4" placeholder="Your Dating Preferences" required></textarea>
+
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="occupation" placeholder="Your Occupation" required>
+
+                    <label for="hobbies">Hobbies</label>
+                    <textarea id="hobbies" name="hobbies" rows="4" placeholder="Your Hobbies" required></textarea>
+
+                    <label for="relationship-status">Relationship Status</label>
+                    <select id="relationship-status" name="relationship-status" required>
+                        <option value="single">Single</option>
+                        <option value="in-a-relationship">In a Relationship</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+
+                    <label for="looking-for">Looking For</label>
+                    <select id="looking-for" name="looking-for" required>
+                        <option value="friendship">Friendship</option>
+                        <option value="dating">Dating</option>
+                        <option value="long-term-relationship">Long-term Relationship</option>
+                        <option value="casual">Casual</option>
+                    </select>
+
+                    <label for="tos">
+                        <input type="checkbox" id="tos" name="tos" required>
+                        I agree to the <a href="tos.html" target="_blank">Terms of Service</a>
+                    </label>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
