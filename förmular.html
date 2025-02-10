@@ -61,7 +61,7 @@
         <section class="form-section">
             <div class="container">
                 <h2>Dating App Registration</h2>
-                <form id="registrationForm" action="submit_form.php" method="post">
+                <form id="registrationForm">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Full Name" required>
 
@@ -114,6 +114,11 @@
                         <option value="long-term-relationship">Long-term Relationship</option>
                         <option value="casual">Casual</option>
                     </select>
+
+                    <label for="tos">
+                        <input type="checkbox" id="tos" name="tos" required>
+                        I agree to the <a href="tos.html" target="_blank">Terms of Service</a>
+                    </label>
 
                     <button type="submit">Register</button>
                 </form>

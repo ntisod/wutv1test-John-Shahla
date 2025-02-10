@@ -132,6 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const registrationForm = document.getElementById('registrationForm');
   if (registrationForm) {
     registrationForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
       const form = event.target;
       const name = form.name.value.trim();
       const email = form.email.value.trim();
@@ -146,26 +148,35 @@ document.addEventListener("DOMContentLoaded", function () {
       const hobbies = form.hobbies.value.trim();
       const relationshipStatus = form['relationship-status'].value;
       const lookingFor = form['looking-for'].value;
+      const tos = form.tos.checked;
 
       if (!name || !email || !age || !gender || !interests || !profilePicture || !bio || !location || !preferences || !occupation || !hobbies || !relationshipStatus || !lookingFor) {
         alert('Please fill out all fields.');
-        event.preventDefault();
         return;
       }
 
       if (isNaN(age) || age <= 0) {
         alert('Please enter a valid age.');
-        event.preventDefault();
+        return;
+      }
+
+      if(age < 18) { 
+        alert('You must be at least 18 years old to register.');
         return;
       }
 
       if (!validateEmail(email)) {
         alert('Please enter a valid email address.');
-        event.preventDefault();
+        return;
+      }
+
+      if (!tos) {
+        alert('You must agree to the Terms of Service.');
         return;
       }
 
       alert('Form submitted successfully!');
+      form.submit(); // Submit the form if validation passes
     });
 
     function validateEmail(email) {
