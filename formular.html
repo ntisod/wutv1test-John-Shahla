@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dating App Form</title>
+    <title id="page-title">Dating App Form</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/main.png">
 </head>
@@ -15,11 +15,11 @@
             <div class="container">
                 <a href="index.html" aria-label="Home"><img src="images/main.png" alt="" class="title-image"></a>
                 <a href="index.html">
-                    <h1 class="logo">JSH Website</h1>
+                    <h1 class="logo" id="logo">JSH Website</h1>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="upphovsratt.html">Rights</a></li>
-                    <li><a href="om-mig.html">About Me</a></li>
+                    <li><a href="upphovsratt.html" id="rights-site">Rights</a></li>
+                    <li><a href="om-mig.html" id="about-site">About Me</a></li>
                 </ul>
                 <div class="hamburger-menu">
                     <span></span>
@@ -60,18 +60,18 @@
     <main>
         <section class="form-section">
             <div class="container">
-                <h2>Dating App Registration</h2>
+                <h2 id="form-title">Dating App Registration</h2>
                 <form id="registrationForm" method="post">
-                    <label for="name">Full Name</label>
+                    <label for="name" id="name-label">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Full Name" required>
 
-                    <label for="email">Email</label>
+                    <label for="email" id="email-label">Email</label>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                    <label for="age">Age</label>
+                    <label for="age" id="age-label">Age</label>
                     <input type="number" id="age" name="age" placeholder="Your Age" required>
 
-                    <label for="gender">Gender</label>
+                    <label for="gender" id="gender-label">Gender</label>
                     <select id="gender" name="gender" required>
                         <option value="" disabled selected>Select your gender</option>
                         <option value="male">Male</option>
@@ -79,28 +79,28 @@
                         <option value="other">Other</option>
                     </select>
 
-                    <label for="interests">Interests</label>
+                    <label for="interests" id="interests-label">Interests</label>
                     <textarea id="interests" name="interests" rows="4" placeholder="Your Interests" required></textarea>
 
-                    <label for="profile-picture">Profile Picture</label>
+                    <label for="profile-picture" id="profile-picture-label">Profile Picture</label>
                     <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
 
-                    <label for="bio">Short Bio</label>
+                    <label for="bio" id="bio-label">Short Bio</label>
                     <textarea id="bio" name="bio" rows="5" placeholder="Tell us about yourself" required></textarea>
 
-                    <label for="location">Location</label>
+                    <label for="location" id="location-label">Location</label>
                     <input type="text" id="location" name="location" placeholder="Your Location" required>
 
-                    <label for="preferences">Dating Preferences</label>
+                    <label for="preferences" id="preferences-label">Dating Preferences</label>
                     <textarea id="preferences" name="preferences" rows="4" placeholder="Your Dating Preferences" required></textarea>
 
-                    <label for="occupation">Occupation</label>
+                    <label for="occupation" id="occupation-label">Occupation</label>
                     <input type="text" id="occupation" name="occupation" placeholder="Your Occupation" required>
 
-                    <label for="hobbies">Hobbies</label>
+                    <label for="hobbies" id="hobbies-label">Hobbies</label>
                     <textarea id="hobbies" name="hobbies" rows="4" placeholder="Your Hobbies" required></textarea>
 
-                    <label for="relationship-status">Relationship Status</label>
+                    <label for="relationship-status" id="relationship-status-label">Relationship Status</label>
                     <select id="relationship-status" name="relationship-status" required>
                         <option value="" disabled selected>Select your relationship status</option>
                         <option value="single">Single</option>
@@ -109,7 +109,7 @@
                         <option value="divorced">Divorced</option>
                     </select>
 
-                    <label for="looking-for">Looking For</label>
+                    <label for="looking-for" id="looking-for-label">Looking For</label>
                     <select id="looking-for" name="looking-for" required>
                         <option value="" disabled selected>Select what you are looking for</option>
                         <option value="friendship">Friendship</option>
@@ -118,12 +118,12 @@
                         <option value="casual">Casual</option>
                     </select>
 
-                    <label for="tos">
+                    <label for="tos" id="tos-label">
                         <input type="checkbox" id="tos" name="tos" required>
                         I agree to the <a href="tos.html" target="_blank">Terms of Service</a>
                     </label>
 
-                    <button type="submit">Register</button>
+                    <button type="submit" id="register-button">Register</button>
                 </form>
             </div>
         </section>
